@@ -1,12 +1,20 @@
-import { Link } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 import img from '../../assets/images/login/login.svg';
 import { useContext } from 'react';
 import {AuthContext} from '../../providers/AuthProvider';
+import Spinner from '../Shared/Spinner/Spinner';
 
 
 const SignUp = () => {
 
-    const {createUser} = useContext(AuthContext);
+    const {createUser, user} = useContext(AuthContext);
+
+    if(user?.email) {
+        return <>
+            <Spinner></Spinner>
+            <Navigate to={'/'} replace></Navigate>
+        </>
+    }
 
     const handleSignUp = event => {
         event.preventDefault();

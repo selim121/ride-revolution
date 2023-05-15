@@ -20,7 +20,7 @@ const NavBar = () => {
                 <li><Link to={'/bookings'} className="hover:text-primary">My Bookings</Link></li>
                 <li><Link onClick={handleLogOut} to={'/login'} className="hover:text-primary">Logout</Link></li>
             </>
-                : <li><Link to={'/signup'} className="hover:text-primary">Login</Link></li>
+                : <li><Link to={'/login'} className="hover:text-primary">Login</Link></li>
         }
     </>
 
