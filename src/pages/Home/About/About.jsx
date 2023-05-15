@@ -1,7 +1,9 @@
 import person from '../../../assets/images/about_us/person.jpg';
 import parts from '../../../assets/images/about_us/parts.jpg';
+import useTitle from '../../hooks/useTitle';
 
 const About = () => {
+    useTitle('Ride Revolution - About');
     return (
         <div>
             <div className="hero my-24">

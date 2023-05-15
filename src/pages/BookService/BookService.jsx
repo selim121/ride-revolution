@@ -1,9 +1,10 @@
 import { useContext } from "react";
 import { useLoaderData } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
+import useTitle from "../hooks/useTitle";
 
 const BookService = () => {
-
+    useTitle('Ride Revolution - Book Now')
     const service = useLoaderData();
     const { title, _id, price, img } = service;
     const {user} = useContext(AuthContext);

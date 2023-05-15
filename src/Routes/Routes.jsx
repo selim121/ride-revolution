@@ -7,6 +7,8 @@ import BookService from "../pages/BookService/BookService";
 import Bookings from "../pages/Bookings/Bookings";
 import PrivateRoute from "./PrivateRoute";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
+import About from "../pages/Home/About/About";
+import Services from "../pages/Home/Services/Services";
 
 const router = createBrowserRouter([
     {
@@ -16,6 +18,14 @@ const router = createBrowserRouter([
         {
             path: '/',
             element: <Home></Home>
+        },
+        {
+            path: 'services',
+            element: <Services></Services>
+        },
+        {
+            path: 'about',
+            element: <About></About>
         },
         {
             path: 'login',

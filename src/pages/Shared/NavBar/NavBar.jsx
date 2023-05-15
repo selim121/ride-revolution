@@ -14,6 +14,7 @@ const NavBar = () => {
     }
     const navItems = <>
         <li><Link to={'/'} className="hover:text-primary">Home</Link></li>
+        <li><Link to={'/services'} className="hover:text-primary">Services</Link></li>
         <li><Link to={'/about'} className="hover:text-primary">About</Link></li>
         {
             user?.email ? <>

@@ -3,10 +3,11 @@ import img from '../../assets/images/login/login.svg';
 import { useContext } from 'react';
 import {AuthContext} from '../../providers/AuthProvider';
 import Spinner from '../Shared/Spinner/Spinner';
+import useTitle from '../hooks/useTitle';
 
 
 const Login = () => {
-
+    useTitle('Ride Revolution - Login');
     const {signIn, user} = useContext(AuthContext);
 
     if(user?.email) {

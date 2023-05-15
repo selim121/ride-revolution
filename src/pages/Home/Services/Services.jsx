@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import ServiceCard from "./ServiceCard";
+import useTitle from "../../hooks/useTitle";
 
 const Services = () => {
-
+    useTitle('Ride Revolution - Services');
     const [services, setServices] = useState([]);
 
     useEffect( () => {
