@@ -14,7 +14,7 @@ const Services = () => {
     return (
         <div className="mt-4 mb-5">
             <div className="text-center space-y-3">
-                <h3 className="text-3xl text-orange-600">Our Services</h3>
+                <h3 className="text-3xl text-primary font-bold">Our Services</h3>
                 <h2 className="text-5xl">Our Service Area</h2>
                 <p>The majority have suffered alteration in some form, by injected humour, or randomized <br /> words which do not look even slightly believable.</p>
             </div>

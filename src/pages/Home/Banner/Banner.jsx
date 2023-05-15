@@ -19,13 +19,13 @@ const Banner = () => {
                             <p>There are many variations of passages of available but the majority have suffered alteration in some Form</p>
                             <div>
                                 <button className="btn btn-primary mr-5">Discover More</button>
-                                <button className="btn btn-outline btn-secondary">Latest Project</button>
+                                <button className="btn btn-outline btn-primary">Latest Project</button>
                             </div>
                         </div>
                     </div>
                     <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
-                        <a href="#slide4" className="btn btn-circle mr-5">❮</a>
-                        <a href="#slide2" className="btn btn-circle">❯</a>
+                        <a href="#slide4" className="btn btn-circle  hover:bg-primary mr-5">❮</a>
+                        <a href="#slide2" className="btn btn-circle  hover:bg-primary">❯</a>
                     </div>
                 </div>
                 <div id="slide2" className="carousel-item relative w-full">
@@ -38,13 +38,13 @@ const Banner = () => {
                             <p>There are many variations of passages of available but the majority have suffered alteration in some Form</p>
                             <div>
                                 <button className="btn btn-primary mr-5">Discover More</button>
-                                <button className="btn btn-outline btn-secondary">Latest Project</button>
+                                <button className="btn btn-outline btn-primary">Latest Project</button>
                             </div>
                         </div>
                     </div>
                     <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
-                        <a href="#slide1" className="btn btn-circle mr-5">❮</a>
-                        <a href="#slide3" className="btn btn-circle">❯</a>
+                        <a href="#slide1" className="btn btn-circle  hover:bg-primary mr-5">❮</a>
+                        <a href="#slide3" className="btn btn-circle  hover:bg-primary">❯</a>
                     </div>
                 </div>
                 <div id="slide3" className="carousel-item relative w-full">
@@ -57,13 +57,13 @@ const Banner = () => {
                             <p>There are many variations of passages of available but the majority have suffered alteration in some Form</p>
                             <div>
                                 <button className="btn btn-primary mr-5">Discover More</button>
-                                <button className="btn btn-outline btn-secondary">Latest Project</button>
+                                <button className="btn btn-outline btn-primary">Latest Project</button>
                             </div>
                         </div>
                     </div>
                     <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
-                        <a href="#slide2" className="btn btn-circle mr-5">❮</a>
-                        <a href="#slide4" className="btn btn-circle">❯</a>
+                        <a href="#slide2" className="btn btn-circle  hover:bg-primary mr-5">❮</a>
+                        <a href="#slide4" className="btn btn-circle  hover:bg-primary">❯</a>
                     </div>
                 </div>
                 <div id="slide4" className="carousel-item relative w-full">
@@ -76,13 +76,13 @@ const Banner = () => {
                             <p>There are many variations of passages of available but the majority have suffered alteration in some Form</p>
                             <div>
                                 <button className="btn btn-primary mr-5">Discover More</button>
-                                <button className="btn btn-outline btn-secondary">Latest Project</button>
+                                <button className="btn btn-outline btn-primary">Latest Project</button>
                             </div>
                         </div>
                     </div>
                     <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
-                        <a href="#slide3" className="btn btn-circle mr-5">❮</a>
-                        <a href="#slide5" className="btn btn-circle">❯</a>
+                        <a href="#slide3" className="btn btn-circle  hover:bg-primary mr-5">❮</a>
+                        <a href="#slide5" className="btn btn-circle  hover:bg-primary">❯</a>
                     </div>
                 </div>
                 <div id="slide5" className="carousel-item relative w-full">
@@ -95,13 +95,13 @@ const Banner = () => {
                             <p>There are many variations of passages of available but the majority have suffered alteration in some Form</p>
                             <div>
                                 <button className="btn btn-primary mr-5">Discover More</button>
-                                <button className="btn btn-outline btn-secondary">Latest Project</button>
+                                <button className="btn btn-outline btn-primary">Latest Project</button>
                             </div>
                         </div>
                     </div>
                     <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
-                        <a href="#slide4" className="btn btn-circle mr-5">❮</a>
-                        <a href="#slide6" className="btn btn-circle">❯</a>
+                        <a href="#slide4" className="btn btn-circle  hover:bg-primary mr-5">❮</a>
+                        <a href="#slide6" className="btn btn-circle  hover:bg-primary">❯</a>
                     </div>
                 </div>
                 <div id="slide6" className="carousel-item relative w-full">
@@ -114,13 +114,13 @@ const Banner = () => {
                             <p>There are many variations of passages of available but the majority have suffered alteration in some Form</p>
                             <div>
                                 <button className="btn btn-primary mr-5">Discover More</button>
-                                <button className="btn btn-outline btn-secondary">Latest Project</button>
+                                <button className="btn btn-outline btn-primary">Latest Project</button>
                             </div>
                         </div>
                     </div>
                     <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
-                        <a href="#slide5" className="btn btn-circle mr-5">❮</a>
-                        <a href="#slide1" className="btn btn-circle">❯</a>
+                        <a href="#slide5" className="btn btn-circle  hover:bg-primary mr-5">❮</a>
+                        <a href="#slide1" className="btn btn-circle  hover:bg-primary">❯</a>
                     </div>
                 </div>
             </div>

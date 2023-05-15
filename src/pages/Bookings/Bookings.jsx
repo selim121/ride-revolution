@@ -17,8 +17,8 @@ const Bookings = () => {
     }, [url])
 
     const handleDelete = id => {
-        const preceed = confirm('Are you sure, you want to delete?');
-        if(preceed){
+        const precede = confirm('Are you sure, you want to delete?');
+        if(precede){
             fetch(`http://localhost:4000/bookings/${id}`, {
                 method: 'DELETE'
             })
@@ -35,8 +35,8 @@ const Bookings = () => {
     }
 
     const handleConfirm =id => {
-        const preceed = confirm('Are you sure?');
-        if(preceed) {
+        const precede = confirm('Are you sure?');
+        if(precede) {
             fetch(`http://localhost:4000/bookings/${id}`, {
                 method: 'PATCH',
                 headers: {

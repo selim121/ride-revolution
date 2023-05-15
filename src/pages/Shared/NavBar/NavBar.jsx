@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from '../../../assets/logo.svg';
+import logo from '../../../assets/logo.png';
 import { useContext } from "react";
 import { AuthContext } from "../../../providers/AuthProvider";
 
@@ -13,21 +13,21 @@ const NavBar = () => {
             .catch(error => console.log(error))
     }
     const navItems = <>
-        <li><Link to={'/'}>Home</Link></li>
-        <li><Link to={'/about'}>About</Link></li>
+        <li><Link to={'/'} className="hover:text-primary">Home</Link></li>
+        <li><Link to={'/about'} className="hover:text-primary">About</Link></li>
         {
             user?.email ? <>
-                <li><Link to={'/bookings'}>My Bookings</Link></li>
-                <li><Link onClick={handleLogOut} to={'/login'}>Logout</Link></li>
+                <li><Link to={'/bookings'} className="hover:text-primary">My Bookings</Link></li>
+                <li><Link onClick={handleLogOut} to={'/login'} className="hover:text-primary">Logout</Link></li>
             </>
-                : <li><Link to={'/signup'}>Login</Link></li>
+                : <li><Link to={'/signup'} className="hover:text-primary">Login</Link></li>
         }
     </>
 
 
     return (
         <>
-            <div className="navbar bg-base-100 h-28 mb-4">
+            <div className="navbar bg-[#BBC7C9] h-28 mb-4">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -37,7 +37,7 @@ const NavBar = () => {
                             {navItems}
                         </ul>
                     </div>
-                    <Link to={'/'} className="btn btn-ghost normal-case text-xl">
+                    <Link to={'/'} className="">
                         <img src={logo} alt="" />
                     </Link>
                 </div>
@@ -47,7 +47,7 @@ const NavBar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <Link to={'/'}><button className="btn btn-outline btn-warning">Appointment</button></Link>
+                    <Link to={user ? '/' : '/login'}><button className="btn btn-outline btn-primary">Appointment</button></Link>
                 </div>
             </div>
         </>

@@ -6,6 +6,7 @@ import SignUp from "../pages/Signup/SignUp";
 import BookService from "../pages/BookService/BookService";
 import Bookings from "../pages/Bookings/Bookings";
 import PrivateRoute from "./PrivateRoute";
+import ErrorPage from "../pages/ErrorPage/ErrorPage";
 
 const router = createBrowserRouter([
     {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
         }
       ]
     },
+    {
+        path: "*",
+        element: <ErrorPage></ErrorPage>
+    }
   ]);
 
   export default router;
