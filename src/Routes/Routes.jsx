@@ -38,7 +38,7 @@ const router = createBrowserRouter([
         {
             path: 'book/:id',
             element: <BookService></BookService>,
-            loader: ({params}) => fetch(`http://localhost:4000/services/${params.id}`)
+            loader: ({params}) => fetch(`https://ride-revolution-server.vercel.app/services/${params.id}`)
             
         },
         {

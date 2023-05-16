@@ -8,7 +8,7 @@ const Bookings = () => {
     const { user } = useContext(AuthContext);
     const [bookings, setBookings] = useState([])
 
-    const url = `http://localhost:4000/bookings?email=${user.email}`;
+    const url = `https://ride-revolution-server.vercel.app/bookings?email=${user.email}`;
     useEffect(() => {
         fetch(url)
             .then(res => res.json())
@@ -20,7 +20,7 @@ const Bookings = () => {
     const handleDelete = id => {
         const precede = confirm('Are you sure, you want to delete?');
         if (precede) {
-            fetch(`http://localhost:4000/bookings/${id}`, {
+            fetch(`https://ride-revolution-server.vercel.app/bookings/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())
@@ -38,7 +38,7 @@ const Bookings = () => {
     const handleConfirm = id => {
         const precede = confirm('Are you sure?');
         if (precede) {
-            fetch(`http://localhost:4000/bookings/${id}`, {
+            fetch(`https://ride-revolution-server.vercel.app/bookings/${id}`, {
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json'
